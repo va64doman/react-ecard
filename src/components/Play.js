@@ -1,6 +1,6 @@
 /**
  * CREATION DATE: 31/05/2021
- * UPDATED DATE: 26/06/2021
+ * UPDATED DATE: 27/06/2021
  */
 
 import React from "react";
@@ -76,16 +76,16 @@ const Play = ({ setMyChoice, turn, cards, health, setScore, setHealth, setTurn, 
 						<img src={require(`./image/b.jpeg`).default} alt="back" className="icon back" width="123" height="174"/>
 						{(cards > 1) ? (
 							<img src={require(`./image/b.jpeg`).default} alt="back" className="icon back" width="123" height="174"/>
-							) : <span>&nbsp;</span>}
+							) : <span></span>}
 						{(cards > 2) ? (
 							<img src={require(`./image/b.jpeg`).default} alt="back" className="icon back" width="123" height="174"/>
-							) : <span>&nbsp;</span>}
+							) : <span></span>}
 						{(cards > 3) ? (
 							<img src={require(`./image/b.jpeg`).default} alt="back" className="icon back" width="123" height="174"/>
-							) : <span>&nbsp;</span>}
+							) : <span></span>}
 						{(cards > 4) ? (
 							<img src={require(`./image/b.jpeg`).default} alt="back" className="icon back" width="123" height="174"/>
-							) : <span>&nbsp;</span>}
+							) : <span></span>}
 						</p>
 						<br/>
 						<p>
@@ -93,22 +93,22 @@ const Play = ({ setMyChoice, turn, cards, health, setScore, setHealth, setTurn, 
 							<Link to="/game">
 								<img src={require(`./image/c.jpeg`).default} alt="Citizen" data-id="c" onClick={setChoice} className="icon citizen" 
 								width="123" height="174"/>
-							</Link>) : <span>&nbsp;</span>}
+							</Link>) : <span></span>}
 							{(cards > 2) ? (
 							<Link to="/game">
 								<img src={require(`./image/c.jpeg`).default} alt="Citizen" data-id="c" onClick={setChoice} className="icon citizen" 
 								width="123" height="174"/>
-							</Link>) : <span>&nbsp;</span>}
+							</Link>) : <span></span>}
 							{(cards > 3) ? (
 							<Link to="/game">
 								<img src={require(`./image/c.jpeg`).default} alt="Citizen" data-id="c" onClick={setChoice} className="icon citizen" 
 								width="123" height="174"/>
-							</Link>) : <span>&nbsp;</span>}
+							</Link>) : <span></span>}
 							{(cards > 4) ? (
 							<Link to="/game">
 								<img src={require(`./image/c.jpeg`).default} alt="Citizen" data-id="c" onClick={setChoice} className="icon citizen" 
 								width="123" height="174"/>
-							</Link>) : <span>&nbsp;</span>}
+							</Link>) : <span></span>}
 							<IsCurrentlyEmp />	
 						</p>
 					</> 
