@@ -26,7 +26,7 @@ function App() {
 	return (
 	<>
 		<div className="container">
-		<Header score={score} health={health} turn={turn} bet={bet} setBet={setBet} cards={cards} />
+		<Header score={score} health={health} turn={turn} bet={bet} setBet={setBet} cards={cards} firstSelect={firstSelect} />
 		<BrowserRouter>
 			<Switch>
 			<Route exact path="/">

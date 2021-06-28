@@ -37,20 +37,20 @@ const Play = ({ setMyChoice, turn, cards, health, setScore, setHealth, setTurn, 
 
 	const IsCurrentlyEmp = () =>
 	{
+		var element = (<Link to="/game">
+				<img src={require(`./image/s.jpeg`).default} alt="Slave" data-id="s" onClick={setChoice} className="icon slave"
+				width="123" height="174" />
+			</Link>);
 		if( (isEmp && ((turn < 4) || (turn > 6 && turn < 10))) || (isEmp && ((turn > 3 && turn < 7) || (turn > 9))) )
 		{
-			return (<Link to="/game">
+			element = (<Link to="/game">
 				<img src={require(`./image/e.jpeg`).default} alt="Emperor" data-id="e" onClick={setChoice} className="icon emperor"
 				width="123" height="174" />
 			</Link>);
 		}
-		else
-		{
-			return (<Link to="/game">
-				<img src={require(`./image/s.jpeg`).default} alt="Slave" data-id="s" onClick={setChoice} className="icon slave"
-				width="123" height="174" />
-			</Link>);
-		}
+		
+		return element;
+		
 	}
 
 	return (
